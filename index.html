@@ -3,136 +3,295 @@
 <head>
     <meta charset="UTF-8">
     <title>module_6</title>
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <style>
-        .fb__1-container {
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        .container {
             display: flex;
             flex-direction: column;
+            width: 1200px;
+            margin: auto;
         }
 
-        .fb__1_2-header {
+
+        .header {
             display: flex;
             justify-content: space-between;
+            margin-top: 30px;
+            align-items: center;
+            font-family: 'Montserrat',serif;
         }
 
-        .fb__2_8-logo {
-            flex-grow: 1;
+        .logo {
+            flex: 1;
         }
 
-        .fb__2_9-nav {
-            flex-grow: 1;
+        .nav {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            width: 490px;
+            text-transform: uppercase;
+        }
+        .menu {
+            margin-right: 60px;
+        }
+        a {
+            text-decoration: none;
+        }
+        .header a:link {
+            color: rgb(149 225 211);
+        }
+        .header a:visited {
+            color: rgb(149 225 211);
+        }
+        .nav a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+        .header_services {
+            margin-top: 130px;
+            text-align: center;
+        }
+        .header_services a:link {
+            color: black;
+        }
+        .header_services a:visited {
+            color: black;
+        }
+        .header_services a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+        .header_services h1 {
+            text-transform: uppercase;
+        }
+        .content {
+            flex: 3;
+            text-align: left;
+            width: 220px;
+        }
+        .icon {
+            flex: 1;
+            width: 33px;
+            height: 33px;
+            border: 1px solid white;
+            text-align: center;
+        }
+        .first_services {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 104px;
+        }
+        .photography {
             display: flex;
             justify-content: space-between;
+            flex: 0 0 382px;
+        }
+        /*.photography .icon {}*/
+        .web_design {
+            display: flex;
+            justify-content: space-between;
+            flex: 0 0 382px;
+        }
+        /*.web_design .icon {}*/
+        .creativity {
+            display: flex;
+            justify-content: space-between;
+            flex: 0 0 382px;
+        }
+        /*.creativity .icon {}*/
+        .second_services {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 104px;
+        }
+        .seo {
+            display: flex;
+            justify-content: space-between;
+            flex: 0 0 382px;
+        }
+        /*.seo .icon {}*/
+        .css_html {
+            display: flex;
+            justify-content: space-between;
+            flex: 0 0 382px;
+        }
+        /*.css_html .icon {}*/
+        .digital {
+            display: flex;
+            justify-content: space-between;
+            flex: 0 0 382px;
+        }
+        /*.digital .icon {}*/
+        .header_services {
+            margin-top: 130px;
+            text-align: center;
+        }
+        .header_team a:link {
+            color: black;
+        }
+        .header_team a:visited {
+            color: black;
+        }
+        .header_team a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+        .header_team h1 {
+            text-transform: uppercase;
         }
 
-        .fb__1_4-first_services {
+        .team {
             display: flex;
             justify-content: space-around;
         }
 
-        .fb__1_5-second_services {
-            display: flex;
-            justify-content: space-around;
-        }
-
-        .fb__1_7-team {
-            display: flex;
-            justify-content: space-around;
-        }
-
-        .fb__1_18-footer {
+        .footer {
             display: flex;
             justify-content: space-between;
         }
+        h2 {
+            font-family: 'Kaushan Script',serif;
+            font-size: 24px;
+        }
+        h1 {
+            font-family: 'Montserrat',serif;
+            font-size: 30px;
+        }
+        h3 {
+            font-family: 'Montserrat',serif;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+        p {
+            font-family: 'Roboto',serif;
+            font-size: 14px;
+            color: rgb(153 153 153);
+            margin-top: 20px;
+        }
+
 
 
     </style>
 </head>
 <body>
-<div class="fb fb__1-container">
-    <div class="fb fb__1_2-header">
-        <div class="fb fb__2_8-logo">
-            <!-- logo -->
-
+<div class="container">
+    <div class="header">
+        <div class="logo">
+            <h1><a href="#">MoGo</a></h1>
         </div>
-        <div class="fb fb__2_9-nav">
-            <div class="fb fb__9_10-about">
-                <!-- about -->
-
+        <div class="nav">
+            <div class="about, menu">
+                <a href="#">about</a>
             </div>
-            <div class="fb fb__9_11-service">
-                <!-- service -->
-
+            <div class="service, menu">
+                <a href="#">service</a>
             </div>
-            <div class="fb fb__9_12-work">
-                <!-- work -->
-
+            <div class="work, menu">
+                 <a href="#">work</a>
             </div>
-            <div class="fb fb__9_13-blog">
-                <!-- blog -->
-
+            <div class="blog, menu">
+                <a href="#">blog</a>
             </div>
-            <div class="fb fb__9_14-contact">
-                <!-- contact -->
-
+            <div class="contact">
+                <a href="#">contact</a>
             </div>
         </div>
     </div>
-    <div class="fb fb__1_3-header_services">
-        <!-- header_services -->
-
+    <div class="header_services">
+        <h2>We work with</h2>
+        <h1><a href="#">amazing services</a></h1>
     </div>
-    <div class="fb fb__1_4-first_services">
-        <div class="fb fb__4_15-photography">
-            <!-- photography -->
-
+    <div class="first_services">
+        <div class="photography">
+            <div class="icon">
+                <img src="img/ALARM.png" alt="alarm"/>
+            </div>
+            <div class="content">
+                <h3>photography</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
         </div>
-        <div class="fb fb__4_16-web_design">
-            <!-- web_design -->
-
+        <div class="web_design">
+            <div class="icon">
+                <img src="img/LINE_GRAPH.png" alt="LINE_GRAPH"/>
+            </div>
+            <div class="content">
+                <h3>web design</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
         </div>
-        <div class="fb fb__4_17-creativity">
-            <!-- creativity -->
-
+        <div class="creativity">
+            <div class="icon">
+                <img src="img/COMPUTER_OK.png" alt="COMPUTER_OK"/>
+            </div>
+            <div class="content">
+                <h3>creativity</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
         </div>
     </div>
-    <div class="fb fb__1_5-second_services">
-        <div class="fb fb__5_19-seo">
-            <!-- seo -->
-
+    <div class="second_services">
+        <div class="seo">
+            <div class="icon">
+                <img src="img/BOOK2.png" alt="BOOK2"/>
+            </div>
+            <div class="content">
+                <h3>seo</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
         </div>
-        <div class="fb fb__5_20-css_html">
-            <!-- css_html -->
-
+        <div class="css_html">
+            <div class="icon">
+                <img src="img/HOME.png" alt="HOME"/>
+            </div>
+            <div class="content">
+                <h3>css html</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
         </div>
-        <div class="fb fb__5_21-digital">
-            <!-- digital -->
-
+        <div class="digital">
+            <div class="icon">
+                <img src="img/IMAGE.png" alt="IMAGE"/>
+            </div>
+            <div class="content">
+                <h3>digital</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
         </div>
     </div>
-    <div class="fb fb__1_6-header_team">
-        <!-- header_team -->
-
+    <div class="header_team">
+        <h2>Who we are</h2>
+        <h1><a href="#">meet our team</a></h1>
     </div>
-    <div class="fb fb__1_7-team">
-        <div class="fb fb__7_22-dix">
+    <div class="team">
+        <div class="dix">
             <!-- dix -->
 
         </div>
-        <div class="fb fb__7_23-campbell">
+        <div class="campbell">
             <!-- campbell -->
 
         </div>
-        <div class="fb fb__7_24-fertig">
+        <div class="fertig">
             <!-- fertig -->
 
         </div>
     </div>
-    <div class="fb fb__1_18-footer">
-        <div class="fb fb__18_25-rights">
+    <div class="footer">
+        <div class="rights">
             <!-- rights -->
 
         </div>
-        <div class="fb fb__18_26-bottom">
+        <div class="bottom">
             <!-- bottom -->
 
         </div>
