@@ -131,8 +131,8 @@
             flex: 0 0 382px;
         }
         /*.digital .icon {}*/
-        .header_services {
-            margin-top: 130px;
+        .header_team {
+            margin-top: 96px;
             text-align: center;
         }
         .header_team a:link {
@@ -148,15 +148,29 @@
         .header_team h1 {
             text-transform: uppercase;
         }
-
         .team {
             display: flex;
             justify-content: space-around;
+            margin-top: 92px;
         }
-
+        .dix {
+            flex: 0 0 380px 470px;
+            text-align: center;
+        }
+        .campbell {
+            flex: 0 0 380px 470px;
+            text-align: center;
+        }
+        .fertig {
+            flex: 0 0 380px 470px;
+            text-align: center;
+        }
         .footer {
             display: flex;
             justify-content: space-between;
+            margin-top: 84px;
+            height: 62px;
+            align-items: center;
         }
         h2 {
             font-family: 'Kaushan Script',serif;
@@ -171,12 +185,56 @@
             font-size: 14px;
             text-transform: uppercase;
         }
+        .footer h3 {
+            text-transform: none;
+            margin: auto 0;
+            display: inline-block;
+        }
         p {
             font-family: 'Roboto',serif;
             font-size: 14px;
             color: rgb(153 153 153);
+        }
+        .first_services p {
             margin-top: 20px;
         }
+        .second_services p {
+            margin-top: 20px;
+        }
+        .header_team p {
+            margin-top: 88px;
+        }
+        /*.team img:hover {}*/
+        .team img:hover {
+            box-shadow: 10px 10px 0 0 rgba(149,225,211,1);
+            opacity: 0.5;
+        }
+        .team p {
+            margin-top: 12px;
+        }
+        .image {
+            background-image: linear-gradient(coral,yellow);
+            height: 470px;
+        }
+        .team h3 {
+            margin-top: 30px;
+        }
+        span {
+            color: red;
+        }
+        .left {
+            line-height: 62px;
+        }
+        button {
+            border: none;
+            padding: 16px 32px;
+            font-family: 'Montserrat',serif;
+            font-size: 14px;
+            text-transform: uppercase;
+            background-color: rgb(149 225 211);
+        }
+
+
 
 
 
@@ -271,29 +329,39 @@
     <div class="header_team">
         <h2>Who we are</h2>
         <h1><a href="#">meet our team</a></h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A beatae blanditiis eligendi illo iure,
+            officiis praesentium quidem quos ratione unde! Alias dolore dolorum expedita nostrum odit, quos
+            tempore ullam? Doloribus!</p>
     </div>
     <div class="team">
         <div class="dix">
-            <!-- dix -->
-
+            <div class="image">
+            <a href="#" ><img class="transparent" src="img/dix.png" alt="dix"/></a>
+            </div>
+            <h3>matthew dix</h3>
+            <p>Graphic Design</p>
         </div>
         <div class="campbell">
-            <!-- campbell -->
-
+            <div class="image">
+            <a href="#" ><img class="transparent" src="img/campbell.png" alt="campbell"/></a>
+            </div>
+            <h3>christopher campbell</h3>
+            <p>Branding/UX design</p>
         </div>
         <div class="fertig">
-            <!-- fertig -->
-
+            <div class="image">
+            <a href="#" ><img class="transparent" src="img/fertig.png" alt="fertig"/></a>
+            </div>
+            <h3>michael fertig</h3>
+            <p>Developer</p>
         </div>
     </div>
     <div class="footer">
-        <div class="rights">
-            <!-- rights -->
-
+        <div class="left">
+            <h3>© 2016 MoGo free PSD template by <span>Laaqiq</span></h3>
         </div>
-        <div class="bottom">
-            <!-- bottom -->
-
+        <div class="button">
+            <button>subscribe</button>
         </div>
     </div>
 </div>
